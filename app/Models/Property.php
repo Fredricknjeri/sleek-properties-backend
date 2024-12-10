@@ -10,16 +10,10 @@ class Property extends Model
     use HasFactory;
 
     protected $fillable = [
-        'title',
-        'description',
-        'price',
-        'address',
-        'bedrooms',
-        'bathrooms',
-        'square_feet',
-        'status',
-        'images'
+        'title', 'description', 'price', 'address',
+        'bedrooms', 'bathrooms', 'square_feet', 'status', 'images'
     ];
+
     protected $casts = [
         'images' => 'array',
     ];
